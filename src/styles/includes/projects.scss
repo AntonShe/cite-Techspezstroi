@@ -1,0 +1,48 @@
+.projects{
+  margin-bottom: 30px;
+  overflow: hidden;
+  width: 1140px;
+  margin: 0 auto 90px auto;
+  
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    min-height: 345px;
+  }
+
+  &__image{
+    margin-bottom: 30px;
+  }
+}
+
+.swiper-projects {
+  width: 100%;
+}
+
+@media (max-width:1200px){ 
+  .projects{
+    width: 720px;
+  }
+
+} 
+
+@media (max-width:768px){
+  .projects{
+    width: 540px;
+
+    &__text{
+      padding: 0 10px;
+    }
+  }
+}
+
+@media (max-width:540px) and (min-width:320px){
+  .projects{
+    width: 320px;  
+
+    &__image{
+      width: 320px;
+      height: 320px;
+    }
+  }
+}

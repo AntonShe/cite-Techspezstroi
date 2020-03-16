@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Главная</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+
+    <svg style="display: none;">
+      <symbol id="pointer">
+          <path d="M13.338 11.631l-.676.737-.208-.19-11.116 10.19-.676-.737L11.714 11.5.662 1.368l.676-.737 11.116 10.19.208-.19.676.737-.144.132.144.131z"/>
+      </symbol>
+      <symbol id="burger" >
+        <path d="M26.000,14.000 L2.000,14.000 C0.895,14.000 -0.000,13.105 -0.000,12.000 C-0.000,10.895 0.895,10.000 2.000,10.000 L26.000,10.000 C27.104,10.000 28.000,10.895 28.000,12.000 C28.000,13.105 27.104,14.000 26.000,14.000 ZM26.000,4.000 L2.000,4.000 C0.895,4.000 -0.000,3.105 -0.000,2.000 C-0.000,0.895 0.895,-0.000 2.000,-0.000 L26.000,-0.000 C27.104,-0.000 28.000,0.895 28.000,2.000 C28.000,3.105 27.104,4.000 26.000,4.000 ZM2.000,20.000 L26.000,20.000 C27.104,20.000 28.000,20.895 28.000,22.000 C28.000,23.104 27.104,24.000 26.000,24.000 L2.000,24.000 C0.895,24.000 -0.000,23.104 -0.000,22.000 C-0.000,20.895 0.895,20.000 2.000,20.000 Z"/>
+    </symbol>
+    </svg>
+    <header class="header">
+        <nav class="menu header__menu">
+          <button class="button menu__button">
+            <svg width="28" height="24"><use xlink:href="#burger"></use></svg>
+          </button>
+          <ul class="menu__list">
+            <li class="menu__item current-link">
+              <a href="#">О компании</a>
+            </li>
+            <li class="menu__item menu__item--sub">
+              <a href="#">Услуги</a>
+              <ul class="menu__sub-list">
+                <li class="menu__sub-item">
+                  <a href="#">Проектирование</a>
+                </li>
+                <li class="menu__sub-item">
+                  <a href="#">Строительство</a>
+                </li>
+                <li class="menu__sub-item">
+                  <a href="#">Горизонтально направленное бурение</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a href="#">Наши работы</a>
+            </li>
+            <li class="menu__item">
+              <a href="#">Контакты</a>
+            </li>
+            <li class="menu__item">
+              <a href="#">Разрешительные документы</a>
+            </li>
+          </ul>
+        </nav>
+    
+        <img class="header__logo" src="img/logo.png" width="281" height="166">
+    
+        <button class="button header__button">заказать звонок</button>
+        
+        <div class="header__contacts contacts">
+          <address class="contacts__address"><a href="#">tss.inc@yandex.ru</a></address>
+          <p class="contacts__tel">
+            +7 (4212) <b>60-15-28</b>
+            <b>46-78-02</b>
+          </p>
+        </div>
+    
+    </header>
+
+    <main class="main">
+      <div class="banner__wrapper">
+        <section class="banner">
+          <h2 class="banner__caption">
+            Lorem ipsum dolor sit
+            amet, consectetur
+            adipiscing.
+          </h2>
+
+          <p class="banner__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
+            gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+          </p>
+
+          <a href="#" class="button banner__link">
+            <span class="button button--inactive banner__button">
+              <svg width="14" height="23"><use xlink:href="#pointer"></use></svg>
+            </span>
+            <p class="banner__text--center">
+              Подробнее
+            </p>
+          </a>
+
+        </section>
+      </div>
+
+      <section class="services">
+        <h2 class="caption">Услуги</h2>
+        <hr class="caption__underline">
+        <ul class="services__list">
+          <li class="services__item">
+            <a href="#" class="services__link">
+              <img src="img/service1.jpg" width="360" height="450" class="services__image">
+              <div class="services__container">
+                <span class="button services__button button--inactive">
+                  <svg width="14" height="23"><use xlink:href="#pointer"></use></svg>
+                </span>                
+                Проектирование                
+              </div>
+            </a>
+          </li>
+          <li class="services__item">
+            <a href="#" class="services__link">
+              <img src="img/service2.jpg" width="360" height="450" class="services__image">
+              <div class="services__container">
+                <span class="button services__button button--inactive">
+                  <svg width="14" height="23"><use xlink:href="#pointer"></use></svg>
+                </span>                
+                Строительство                
+              </div>
+            </a>
+          </li>
+          <li class="services__item">
+            <a href="#" class="services__link">
+              <img src="img/service3.jpg" width="360" height="450" class="services__image">
+              <div class="services__container">
+                <span class="button services__button button--inactive">
+                  <svg width="14" height="23"><use xlink:href="#pointer"></use></svg>
+                </span>                
+                ГНБ (Горизонтально<br> направленное бурение)                
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="swiper-container advantages">
+        <h2 class="caption">Преимущества</h2>
+        <hr class="caption__underline">
+        <div class="container-button">
+          <button class="swiper-button-prev button button--left">
+            <svg width="14" height="23"><use xlink:href="#pointer"></use></svg>
+          </button>
+          <button class="swiper-button-next button ">
+            <svg width="14" height="23"><use xlink:href="#pointer"></use></svg>
+          </button>
+        </div>
+
+        <ul class="swiper-wrapper advantages__list ">
+          <li class="swiper-slide advantages__item ">
+            <p class="advantages__text">
+              Стабильность<br> компании
+            </p>
+          </li>
+          <li class="swiper-slide advantages__item">
+            <p class="advantages__text">
+              Партнерские<br> отношения с крупными<br> производителями
+            </p>
+          </li>
+          <li class="swiper-slide advantages__item">
+            <p class="advantages__text">
+              Большой опыт<br> работы
+            </p>
+          </li>   
+          <li class="swiper-slide advantages__item">
+            <p class="advantages__text">
+              Большой опыт<br> работы
+            </p>
+          </li>
+          <li class="swiper-slide advantages__item">
+            <p class="advantages__text">
+              Большой опыт<br> работы
+            </p>
+          </li> 
+        </ul>
+      </section>
+      
+      <section class="projects">
+        <div class="swiper-projects">
+          <h2 class="caption">Выполненные работы</h2>
+          <hr class="caption__underline">
+          <div class="container-button">
+            <button class="swiper-button-prev button button--left">
+              <svg width="14" height="23"><use xlink:href="#pointer"></use></svg>
+            </button>
+            <button class="swiper-button-next button ">
+              <svg width="14" height="23"><use xlink:href="#pointer"></use></svg>
+            </button>
+          </div>
+          <ul class="projects__list swiper-wrapper">
+            <li class="swiper-slide projects__item">
+              <a href="#">
+              <img src="img/projects1.jpg" width="263" height="263" class="projects__image">
+              <p class="projects__text">
+                Стабильность<br> компании
+              </p>
+              </a>
+            </li>
+            <li class="swiper-slide projects__item">
+              <a href="#">
+                <img src="img/projects2.jpg" width="263" height="263" class="projects__image">
+                <p class="projects__text">
+                  Стабильность<br> компании
+                </p>
+              </a>
+            </li>
+            <li class="swiper-slide projects__item">
+              <a href="#">
+                <img src="img/projects3.jpg" width="263" height="263" class="projects__image">
+                <p class="projects__text">
+                  Стабильность<br> компании
+                </p>
+              </a>
+            </li>
+            <li class="swiper-slide projects__item">
+              <a href="#">
+                <img src="img/projects4.jpg" width="263" height="263" class="projects__image">
+                <p class="projects__text">
+                  Стабильность<br> компании
+                </p>
+              </a>
+            </li>
+            <li class="swiper-slide projects__item">
+              <a href="#">
+                <img src="img/projects3.jpg" width="263" height="263" class="projects__image">
+                <p class="projects__text">
+                  Стабильность<br> компании
+                </p>
+              </a>
+            </li>
+            <li class="swiper-slide projects__item">
+              <a href="#">
+                <img src="img/projects1.jpg" width="263" height="263" class="projects__image">
+                <p class="projects__text">
+                  Стабильность<br> компании
+                </p>
+              </a>
+            </li>
+          </ul>
+      </div>
+      </section>
+
+      <div class="wrapper certificates__wrapper">
+        <section class="certificates">
+          <div class="swiper-certificates">
+            <h2 class="caption">Свидетельства о допуске</h2>
+            <hr class="caption__underline">
+            <div class="container-button">
+              <button class="swiper-button-prev button button--left">
+                <svg width="14" height="23"><use xlink:href="#pointer"></use></svg>
+              </button>
+              <button class="swiper-button-next button ">
+                <svg width="14" height="23"><use xlink:href="#pointer"></use></svg>
+              </button>
+            </div>
+            <ul class="swiper-wrapper certificates__list">
+              <li class="swiper-slide certificates__item">
+                <a href="#">
+                  <img src="img/certificate.jpg" width="165" height="235" class="certificates__image">
+                </a>
+              </li>
+              <li class="swiper-slide certificates__item">
+              <a href="#">
+                  <img src="img/certificate.jpg" width="165" height="235" class="certificates__image">
+                </a>
+              </li>
+              <li class="swiper-slide certificates__item">
+                <a href="#">
+                  <img src="img/certificate.jpg" width="165" height="235" class="certificates__image">
+                </a>
+              </li>
+              <li class="swiper-slide certificates__item">
+              <a href="#">
+                  <img src="img/certificate.jpg" width="165" height="235" class="certificates__image">
+                </a>
+              </li>
+              <li class="swiper-slide certificates__item">
+                <a href="#">
+                  <img src="img/certificate.jpg" width="165" height="235" class="certificates__image">
+                </a>
+              </li>
+              <li class="swiper-slide certificates__item">
+                <a href="#">
+                  <img src="img/certificate.jpg" width="165" height="235" class="certificates__image">
+                </a>
+              </li>
+              <li class="swiper-slide certificates__item">
+                <a href="#">
+                  <img src="img/certificate.jpg" width="165" height="235" class="certificates__image">
+                </a>
+              </li>
+              <li class="swiper-slide certificates__item">
+                <a href="#">
+                  <img src="img/certificate.jpg" width="165" height="235" class="certificates__image">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="certificates__link">Подробнее</a>
+        </section>
+    </div>
+
+      <section class="seo">
+        <h2 class="caption seo__caption">СЕО тексты</h2>
+        <p class="seo__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+          ut labore et dolore magna aliqua. 
+          Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel 
+          facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+          incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. 
+          Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+        </p>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="wrapper footer__wrapper">
+        <div class="footer__container">
+          <div class="footer__container footer__container--inner-top">
+            <h2 class="footer__caption">Техспецстрой</h2>
+            
+            <div class="contacts contacts--long footer__contacts">
+              <address class="contacts__address contacts__address--margin"><a href="#">tss.inc@yandex.ru</a></address>
+              <p class="contacts__tel">
+                +7 (4212) <b>60-15-28, 46-78-02</b>
+              </p>
+            </div>
+          </div>
+    
+          <div class="footer__container footer__container--inner-bottom">
+            <nav class="footer__menu">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#">О компании</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#">Услуги</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#">Наши работы</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#">Контакты</a>
+                </li>
+                <li class="footer__item">
+                <a href="#">Разрешительные документы</a>
+                </li>
+              </ul>
+            </nav>   
+    
+            <ul class="footer__social-list">
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link"><span class="visually-hidden">Вконтакте</span></a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link"><span class="visually-hidden">Фейсбук</span></a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link"><span class="visually-hidden">Инстаграм</span></a>
+              </li>
+            </ul>        
+          </div>
+        </div>
+      </div>
+    
+      <div class="footer__container footer__container--bottom">
+        <p class="footer__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+        </p>
+        <p class="footer__copyright">
+          <u>Создание и продвижение сайта</u> - <a href="#"class="footer__link">Перфоманс<img src="img/perf-logo.png" height="14" width="9" class="footer__perf-logo"></img></a>
+        </p>
+      </div>
+    </footer>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

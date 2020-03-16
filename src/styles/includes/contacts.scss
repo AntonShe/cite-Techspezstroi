@@ -1,0 +1,36 @@
+.contacts{
+  width: 200px;
+  justify-items: flex-end;
+
+  text-align: right;
+
+  &__address, a{
+    color: $color-lightblue2;
+    font-size: 14px;
+    text-decoration: underline;
+    margin-bottom: 30px;
+
+    &--margin{
+      margin-bottom: 15px;
+      line-height: auto;
+    }
+
+    &:hover{
+      color: #000;
+    }
+  }
+  
+  &__tel{
+    font-size: 22px;
+    line-height: 30px;
+    b{
+      font-size: 20px;
+      font-weight: bolder;
+    }
+  }
+
+  &--long{
+    width: 360px;   
+  }
+}
+

@@ -1,0 +1,86 @@
+.advantages{
+  width: 1140px;
+  margin: 0 auto 90px auto;
+
+  &__list{
+  display: flex;
+  justify-content: space-between;
+  }
+
+  &__text{
+    text-align: center;
+    padding: 0 80px;
+    line-height: 22px;
+  }
+
+  &__item{    
+    width: 360px;
+    min-height: 320px;
+    padding: 220px 0 30px 0;
+    
+    &:nth-of-type(1){
+      background-image: url("../img/advantages1.png") no-repeat; 
+      background-position: 50% 60px;
+      background-size: 100px 100px;    
+      background-color: $color-grey;
+    }
+    &:nth-of-type(2){
+      background-image: url("../img/advantages2.png") no-repeat;
+      background-position: 50% 60px;
+      background-size: 100px 100px;    
+      background-color: $color-grey;
+    }
+    &:nth-of-type(3){
+      background-image: url("../img/advantages3.png") no-repeat;
+      background-position: 50% 60px;
+      background-size: 100px 100px;    
+      background-color: $color-grey;
+    
+    }
+    &:nth-of-type(4){
+      background-image: url("../img/advantages1.png") no-repeat;
+      background-position: 50% 60px;
+      background-size: 100px 100px;    
+      background-color: $color-grey;
+    
+    }
+    &:nth-of-type(5){
+      background-image: url("../img/advantages2.png") no-repeat;
+      background-position: 50% 60px;
+      background-size: 100px 100px;    
+      background-color: $color-grey;    
+    }    
+  }
+}
+
+@media (max-width:1200px){ 
+  .advantages{
+    width: 720px;
+
+    &__item{
+      padding: 200px 0 10px 0;
+
+    }
+
+    &__text{
+      padding: 0 30px;
+    }
+  }
+
+} 
+
+@media (max-width:768px){
+  .advantages{
+    width: 540px;
+
+    &__item{    
+      width: 260px;
+    }
+  } 
+}
+
+@media (max-width:540px) and (min-width:320px){
+  .advantages{
+    width: 320px;
+  }
+}
