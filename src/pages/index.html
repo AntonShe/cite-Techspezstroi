@@ -197,47 +197,31 @@
                 <svg width="14" height="23"><use xlink:href="#pointer"></use></svg>
               </button>
             </div>
-            <ul class="swiper-wrapper certificates__list">
-              <li class="swiper-slide certificates__item">
-                <a href="#">
-                  <img src="img/certificate.jpg" width="165" height="235" class="certificates__image">
-                </a>
+            <ul class="swiper-wrapper certificates__list" id="lightgallery">
+              <li class="swiper-slide certificates__item" data-src="img/certificate.jpg">
+                <img src="img/certificate.jpg" width="165" height="235" class="certificates__image">
               </li>
-              <li class="swiper-slide certificates__item">
-              <a href="#">
-                  <img src="img/certificate.jpg" width="165" height="235" class="certificates__image">
-                </a>
+              <li class="swiper-slide certificates__item" data-src="img/certificate.jpg">
+                <img src="img/certificate.jpg" width="165" height="235" class="certificates__image">
+              </li>   
+              <li class="swiper-slide certificates__item" data-src="img/certificate.jpg">
+                <img src="img/certificate.jpg" width="165" height="235" class="certificates__image">
               </li>
-              <li class="swiper-slide certificates__item">
-                <a href="#">
-                  <img src="img/certificate.jpg" width="165" height="235" class="certificates__image">
-                </a>
+              <li class="swiper-slide certificates__item" data-src="img/certificate.jpg">
+                <img src="img/certificate.jpg" width="165" height="235" class="certificates__image">
+              </li>  
+              <li class="swiper-slide certificates__item" data-src="img/certificate.jpg">
+                <img src="img/certificate.jpg" width="165" height="235" class="certificates__image">
               </li>
-              <li class="swiper-slide certificates__item">
-              <a href="#">
-                  <img src="img/certificate.jpg" width="165" height="235" class="certificates__image">
-                </a>
+              <li class="swiper-slide certificates__item" data-src="img/certificate.jpg">
+                <img src="img/certificate.jpg" width="165" height="235" class="certificates__image">
               </li>
-              <li class="swiper-slide certificates__item">
-                <a href="#">
-                  <img src="img/certificate.jpg" width="165" height="235" class="certificates__image">
-                </a>
+              <li class="swiper-slide certificates__item" data-src="img/certificate.jpg">
+                <img src="img/certificate.jpg" width="165" height="235" class="certificates__image">
               </li>
-              <li class="swiper-slide certificates__item">
-                <a href="#">
-                  <img src="img/certificate.jpg" width="165" height="235" class="certificates__image">
-                </a>
-              </li>
-              <li class="swiper-slide certificates__item">
-                <a href="#">
-                  <img src="img/certificate.jpg" width="165" height="235" class="certificates__image">
-                </a>
-              </li>
-              <li class="swiper-slide certificates__item">
-                <a href="#">
-                  <img src="img/certificate.jpg" width="165" height="235" class="certificates__image">
-                </a>
-              </li>
+              <li class="swiper-slide certificates__item" data-src="img/certificate.jpg">
+                <img src="img/certificate.jpg" width="165" height="235" class="certificates__image">
+              </li>             
             </ul>
           </div>
           <a href="#" class="certificates__link">Подробнее</a>
@@ -257,7 +241,22 @@
       </section>
     </main>
     //= common/footer.html
-    <script src="js/swiper.min.js"></script>
+
+    <div class="modal-feedback__container">
+      <form class="modal-feedback">
+        <span class="modal-feedback__button-close"></span>
+        <input class="modal-feedback__input" type="text" placeholder="Как вас зовут?" required>
+        <input class="modal-feedback__input" type="tel" id="tel" placeholder="Ваш телефон?" required>
+        <textarea class="modal-feedback__textarea" placeholder="Напишите что-нибудь..."></textarea>
+        <button type="submit" class="button modal-feedback__button-send">Отправить</button>
+      </form>
+    </div>
+
+    <script src="js/swiper.min.js"></script>   
+    <script src="js/lightgallery.js"></script>
+    <script src="js/lg-zoom.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

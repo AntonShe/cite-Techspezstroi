@@ -19,6 +19,18 @@
 
     line-height: 24px;
     font-weight: 300;
+
+    &::before{
+      content: "";
+      background-image:url("../img/service-blind.png") no-repeat;
+      background-position: center;
+      background-size: 500px;
+      transition: 1s;
+      position: absolute;      
+      height: 450px;
+      width: 360px;
+      z-index: 1;    
+    }
   }
 
   &__image{    
@@ -47,41 +59,30 @@
     min-height: 535px;
     width: 360px;
     position: relative;
+    z-index: 2;
     &:hover{
       #{$root} {
         &__link{
           color: $color-blue;
           font-weight: bold;
-          }
 
-          &__image{
-            filter: none;
+          &::before{
+            background-size: 300%;
           }
+        }
 
-          &__button{
-            background-color: $color-blue;
-            svg{
-              fill: $color-grey;
-            }
+        &__image{
+          filter: none;
+        }
+
+        &__button{
+          background-color: $color-blue;
+          svg{
+            fill: $color-grey;
           }
-      }
-
-      &::before{
-        background-size: 300%;
-      }
-    }
-    
-    &::before{
-      content: "";
-      background-image:url("../img/service-blind.png") no-repeat;
-      background-position: center;
-      background-size: 500px;
-      transition: 1s;
-      position: absolute;      
-      height: 450px;
-      width: 360px;
-      z-index: 1;    
-    }
+        }
+      }      
+    }    
   }    
 }
 
@@ -117,10 +118,11 @@
 
     &__item{
       width: 320px;
+    }
 
+    &__link{
       &::before{
         width: 320px;
-
       }
     }
 

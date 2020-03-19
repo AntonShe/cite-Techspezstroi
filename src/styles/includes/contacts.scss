@@ -4,7 +4,7 @@
 
   text-align: right;
 
-  &__address, a{
+  &__address{
     color: $color-lightblue2;
     font-size: 14px;
     text-decoration: underline;
@@ -23,14 +23,22 @@
   &__tel{
     font-size: 22px;
     line-height: 30px;
-    b{
+    &--link{
       font-size: 20px;
-      font-weight: bolder;
+      font-weight: bold;
+
+      &:hover{
+        color:$color-blue;
+      }
     }
   }
 
   &--long{
     width: 360px;   
+  }
+
+  &__link{
+    color: $color-lightblue2;
   }
 }
 

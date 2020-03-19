@@ -25,7 +25,7 @@
     font-weight: 500;
     text-transform: uppercase;
 
-    &:hover{
+    &:hover, &--change{
       background-color: $color-blue;
       color: #fff;
       font-weight: bold;

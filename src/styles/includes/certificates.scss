@@ -20,7 +20,8 @@
   }
 
   &__item{
-    margin-bottom: 20px;      
+    margin-bottom: 20px;     
+    cursor: pointer; 
     
     &:hover{
       .certificates__image{          
