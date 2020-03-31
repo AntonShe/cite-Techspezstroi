@@ -140,6 +140,50 @@ modal.addEventListener('click', function(evt) {
     evt.stopPropagation();
 });
 
-$(function(){
-  $("#tel").mask("8(999) 999-9999");
+$("#tel").mask("+7(999)999-9999", {autoclear: false});
+
+$.validator.addMethod("minlengthphone", function(value, element){
+  return value.replace(/\D+/g, '').length > 10;
+},
+"Введите номер полностью");
+
+$.validator.addMethod("requirephone", function(value, element){
+  return value.replace(/\D+/g, '').length > 1;
+},
+"Введите ваш телефон");
+
+$('#modalForm').validate({
+  rules:{
+    phone: {
+      minlengthphone:true,
+      requirephone:true,
+      required:true
+    },
+
+    name: {
+      required:true      
+    },
+  },
+
+  messages: {
+    phone: {
+      required: "Введите ваш телефон"
+    },
+    name: {
+      required: "Введите ваше имя"
+    }
+  }
 });
+
+// $("#myForm").validate({
+//   rules: {
+//     email: {
+//       required: true,
+//       email: true
+//     },
+//     name: {
+//       required: true,
+//       minlength: 5
+//     }
+//   }
+// });

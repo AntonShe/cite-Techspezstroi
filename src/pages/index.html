@@ -243,11 +243,11 @@
     //= common/footer.html
 
     <div class="modal-feedback__container">
-      <form class="modal-feedback">
+      <form class="modal-feedback" id="modalForm" role="form">
         <span class="modal-feedback__button-close"></span>
-        <input class="modal-feedback__input" type="text" placeholder="Как вас зовут?" required>
-        <input class="modal-feedback__input" type="tel" id="tel" placeholder="Ваш телефон?" required>
-        <textarea class="modal-feedback__textarea" placeholder="Напишите что-нибудь..."></textarea>
+        <input class="modal-feedback__input" type="text" placeholder="Ваше имя" name="name" required>
+        <input class="modal-feedback__input" type="tel" id="tel" placeholder="Ваш телефон" name="phone" required>
+        <textarea class="modal-feedback__textarea" placeholder="Ваше сообщение"></textarea>
         <button type="submit" class="button modal-feedback__button-send">Отправить</button>
       </form>
     </div>
@@ -257,6 +257,7 @@
     <script src="js/lg-zoom.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/jquery.validate.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

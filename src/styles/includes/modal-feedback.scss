@@ -4,7 +4,7 @@
   justify-content: space-between;
   min-height: 400px;
   position: fixed;
-  top :300px;
+  top :10%;
   left: calc(50% - 238px);
   padding: 30px;
   z-index: 100;
@@ -103,7 +103,7 @@
 
 @media (max-width:540px) and (min-width:320px){
   .modal-feedback{
-    top :300px;
+    top: 5px;
     width: 310px;
     left: calc(50% - 155px);
     padding: 10px;
