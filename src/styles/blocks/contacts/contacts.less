@@ -1,0 +1,36 @@
+.contacts{
+  display: flex;
+  min-height: 650px;   
+  margin-bottom: 60px;
+
+  &__map{
+    min-height: 650px; 
+    width:calc(50% + 310px);
+  }
+}
+
+@media (max-width:1200px){
+  .contacts{
+    &__map{
+      width:calc(50% + 100px);
+    }
+  }
+} 
+
+@media (max-width:768px){
+  .contacts{
+    background-color: #fff;
+    flex-direction: column;
+
+    &__map{
+      width:100%;
+      min-height: 400px;
+    }
+  }
+} 
+
+@media (max-width:540px) and (min-width:320px){
+  .contacts{
+
+  }
+}

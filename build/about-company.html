@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>Главная</title>
+    <title>О компании</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
@@ -75,116 +75,138 @@
     </header>
 
     <main class="main">
-      <div class="banner__wrapper">
-        <section class="banner">
-          <h2 class="banner__caption">
-            Lorem ipsum dolor sit
-            amet, consectetur
-            adipiscing.
-          </h2>
-
-          <p class="banner__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
-            gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
-          </p>
-
-          <a href="#" class="button banner__link">
-            <span class="button button--inactive banner__button">
-              <svg width="14" height="23"><use xlink:href="#pointer"></use></svg>
-            </span>
-            <p class="banner__text--center">
-              Подробнее
-            </p>
-          </a>
-
-        </section>
+      <div class="caption__wrapper">
+        <div class="caption__center">
+          <nav class="breadcrumb">
+            <ul class="breadcrumb__list">
+              <li class="breadcrumb__visited"><a href="index.html">Главная</a></li>
+              <li class="breadcrumb__dash"></li>
+              <li class="breadcrumb__current">О компании</li>
+            </ul>
+          </nav>
+          <h1 class="caption caption--no-margin">
+            О компании
+          </h1>
+        </div>
       </div>
 
-      <section class="services">
-        <h2 class="caption">Услуги</h2>
-        <hr class="caption__underline">
-        <ul class="services__list">
-          <li class="services__item">
-            <a href="#" class="services__link">
-              <img src="img/service1.jpg" width="360" height="450" class="services__image">
-              <div class="services__container">
-                <span class="button services__button button--inactive">
-                  <svg width="14" height="23"><use xlink:href="#pointer"></use></svg>
-                </span>                
-                Проектирование                
-              </div>
-            </a>
+      <section class="about">
+        <p class="about__text about__text--general">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+          tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse
+          ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+          incididunt ut labore et dolore magna aliqua. 
+          Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan 
+          lacus vel facilisis. 
+        </p>
+        <ul class="about__list">
+          <li class="about__item">
+            <img class="about__image" width="264" height="263" src="img/projects1.jpg">
+            <p class="about__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do 
+            </p>
           </li>
-          <li class="services__item">
-            <a href="#" class="services__link">
-              <img src="img/service2.jpg" width="360" height="450" class="services__image">
-              <div class="services__container">
-                <span class="button services__button button--inactive">
-                  <svg width="14" height="23"><use xlink:href="#pointer"></use></svg>
-                </span>                
-                Строительство                
-              </div>
-            </a>
+          <li class="about__item">
+            <img class="about__image" width="264" height="263"  src="img/projects3.jpg">
+            <p class="about__text">
+              Quis ipsum suspendisse ultrices gravida. Risus commodo 
+              viverra maecenas accumsan lacus vel facilisis. 
+            </p>
           </li>
-          <li class="services__item">
-            <a href="#" class="services__link">
-              <img src="img/service3.jpg" width="360" height="450" class="services__image">
-              <div class="services__container">
-                <span class="button services__button button--inactive">
-                  <svg width="14" height="23"><use xlink:href="#pointer"></use></svg>
-                </span>                
-                ГНБ (Горизонтально<br> направленное бурение)                
-              </div>
-            </a>
+          <li class="about__item">
+            <img class="about__image" width="264" height="263"  src="img/projects4.jpg">
+            <p class="about__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore
+            </p>
+          </li>
+          <li class="about__item">
+            <img class="about__image" width="264" height="263"  src="img/projects2.jpg">
+            <p class="about__text">
+              Quis ipsum suspendisse ultrices gravida. Risus commodo 
+              viverra maecenas accumsan lacus vel facilisis.  
+            </p>
+          </li>
+          
+          <li class="about__item about__item--big">
+            <picture>
+              <source class="about__image--big"  media="(max-width:540px)"  width="243" height="263" srcset="img/projects3.jpg"> 
+              <img class="about__image--big" width="556" height="263"  src="img/projects-big.jpg">
+            </picture>
+            <div class="about__container">
+              <h3 class="about__caption">
+                СЕО тексты
+              </h3>
+              <p class="about__tex tabout__text--general about__text--big">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan 
+                lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra 
+                maecenas accumsan lacus vel facilisis. 
+              </p>
+            </div>
           </li>
         </ul>
       </section>
 
-      <section class="swiper-container advantages">
-        <h2 class="caption">Преимущества</h2>
-        <hr class="caption__underline">
-        <div class="container-button">
-          <button class="swiper-button-prev button button--left">
-            <svg width="14" height="23"><use xlink:href="#pointer"></use></svg>
-          </button>
-          <button class="swiper-button-next button ">
-            <svg width="14" height="23"><use xlink:href="#pointer"></use></svg>
-          </button>
-        </div>
-
-        <ul class="swiper-wrapper advantages__list ">
-          <li class="swiper-slide advantages__item ">
-            <p class="advantages__text">
-              Стабильность<br> компании
-            </p>
-          </li>
-          <li class="swiper-slide advantages__item">
-            <p class="advantages__text">
-              Партнерские<br> отношения с крупными<br> производителями
-            </p>
-          </li>
-          <li class="swiper-slide advantages__item">
-            <p class="advantages__text">
-              Большой опыт<br> работы
-            </p>
-          </li>   
-          <li class="swiper-slide advantages__item">
-            <p class="advantages__text">
-              Большой опыт<br> работы
-            </p>
-          </li>
-          <li class="swiper-slide advantages__item">
-            <p class="advantages__text">
-              Большой опыт<br> работы
-            </p>
-          </li> 
-        </ul>
-      </section>
-      
+      <div class="documents-table__wrapper">
+        <section class="documents-table">
+          <h2 class="caption">Таблица, документы</h2>
+          <table class="table documents-table__table">
+            <tr class="table__rows">
+              <th class="table__captions">Название столбца</th>
+              <th class="table__captions">Название столбца</th>
+              <th class="table__captions">Название столбца</th>
+              <th class="table__captions">Название столбца</th>
+            </tr>
+            <tr class="table__rows table__rows--colored">
+              <td class="table__cols">Название строки</td>
+              <td class="table__cols">13469</td>
+              <td class="table__cols">13469</td>
+              <td class="table__cols">13469</td>
+            </tr>
+            <tr class="table__rows table__rows--colored">
+              <td class="table__cols">Название строки</td>
+              <td class="table__cols">13469</td>
+              <td class="table__cols">13469</td>
+              <td class="table__cols">13469</td>
+            </tr>
+            <tr class="table__rows table__rows--colored">
+              <td class="table__cols">Название строки</td>
+              <td class="table__cols">13469</td>
+              <td class="table__cols">13469</td>
+              <td class="table__cols">13469</td>
+            </tr>
+            <tr class="table__rows table__rows--colored">
+              <td class="table__cols">Название строки</td>
+              <td class="table__cols">13469</td>
+              <td class="table__cols">13469</td>
+              <td class="table__cols">13469</td>
+            </tr>
+          </table>
+            <div class="documents-table__container">
+              <a href="#" class="documents-table__link">    
+                <svg width="26" height="26"><use xlink:href="#xls-ico"></use></svg>         
+                <p class="documents-table__text-link">Название документа</p>
+              </a>
+              
+              <a href="#" class="documents-table__link">    
+                <svg width="26" height="26"><use xlink:href="#doc-ico"></use></svg>          
+                <p class="documents-table__text-link">Название документа</p>
+              </a>
+              
+              <a href="#" class="documents-table__link">   
+                <svg width="26" height="26"><use xlink:href="#pdf-ico"></use></svg>           
+                <p class="documents-table__text-link">Название документа</p>
+              </a>
+            </div>
+        </section>
+      </div>
       <section class="projects">
         <div class="swiper-projects">
-          <h2 class="caption">Выполненные работы</h2>
+          <h2 class="caption">Галерея</h2>
           <hr class="caption__underline">
           <div class="container-button">
             <button class="swiper-button-prev button button--left">
@@ -250,7 +272,7 @@
       <div class="wrapper certificates__wrapper">
         <section class="certificates">
           <div class="swiper-certificates">
-            <h2 class="caption">Свидетельства о допуске</h2>
+            <h2 class="caption">Сертификаты</h2>
             <hr class="caption__underline">
             <div class="container-button">
               <button class="swiper-button-prev button button--left">
@@ -291,18 +313,26 @@
         </section>
     </div>
 
-      <section class="seo">
-        <h2 class="caption seo__caption">СЕО тексты</h2>
-        <p class="seo__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-          ut labore et dolore magna aliqua. 
-          Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel 
-          facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-          incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. 
-          Risus commodo viverra maecenas accumsan lacus vel facilisis. 
-        </p>
-      </section>
+      <section class="request-call">
+        <div class="request-call__container">
+          <h1 class="request-call__caption">заказать звонок</h1>
+        </div>
+        <form class="request-call__form validate-contacts" role="form">
+          <input class="request-call__input" type="text" placeholder="Имя" name="name" required>
+          <input class="request-call__input phone-mask" type="tel" id="tel" placeholder="Телефон" name="phone" required>
+          <div class="request-call__textarea-wrap">
+            <div class="request-call__textarea-icon"></div>
+            <textarea class="request-call__textarea" placeholder="Комментарий" rows="1"></textarea>  
+          </div>
+          <div class="request-call__checkbox-container">        
+            <input class="request-call__checkbox" type="checkbox" id="agreementCheckbox" name="agreement">
+            <label class="request-call__checkbox-label" for="agreementCheckbox">Даю согласие на обработку персональных данных</label>
+          </div> 
+          <button type="submit" class="button request-call__button">заказать звонок</button>
+        </form>
+      </section> 
     </main>
+
     <footer class="footer">
       <div class="wrapper footer__wrapper">
         <div class="footer__container">
@@ -368,12 +398,12 @@
       <form class="modal-feedback validate-modal" role="form">
         <span class="modal-feedback__button-close"></span>
         <input class="modal-feedback__input" type="text" placeholder="Ваше имя" name="name" required>
-        <input class="modal-feedback__input" type="tel" id="tel" placeholder="Ваш телефон" name="phone" required>
+        <input class="modal-feedback__input phone-mask" type="tel" id="tel" placeholder="Ваш телефон" name="phone" required>
         <textarea class="modal-feedback__textarea" placeholder="Ваше сообщение"></textarea>
         <button type="submit" class="button modal-feedback__button-send">Отправить</button>
       </form>
     </div>
-
+    
     <script src="js/swiper.min.js"></script>   
     <script src="js/lightgallery.min.js"></script>
     <script src="js/lg-zoom.js"></script>

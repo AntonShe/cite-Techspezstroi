@@ -1,10 +1,3 @@
-var windowWidth = window.screen.width;
-
-var menuButton = document.querySelector(".menu__button");
-var menu = document.querySelector(".menu__list");
-var subMenu = document.querySelector(".menu__sub-list");
-var subMenuButton = document.querySelector(".menu__item--sub");
-
 var swiper = new Swiper('.swiper-container', {
   navigation: {
     nextEl: '.swiper-button-next',
@@ -91,56 +84,31 @@ var swiperCertificates = new Swiper('.swiper-certificates', {
   }
 });
 
-menuButton.addEventListener("click", function() {  
-  menu.classList.toggle("menu__list--show");
-  
-  menuButton.classList.toggle("menu__button--change");
+
+// index.html - главное меню
+
+$(".menu__button").click(function(){   
+  $(".menu__list").toggleClass("menu__list--show");
+  $(this).toggleClass("menu__button--change");
 });
 
-subMenuButton.addEventListener("click", function() {
-
-
-  subMenu.classList.toggle("menu__sub-list--show");
-  
-  subMenuButton.classList.toggle("menu__item--change");
+$(".menu__item--sub").click(function(){ 
+  $(".menu__sub-list").toggleClass("menu__sub-list--show");
+  $(this).toggleClass("menu__item--change");
 });
+
+
+// index.html - галерея
 
 lightGallery(document.getElementById('lightgallery'), {
   mode: 'lg-fade',
   color: 'white'
 });
 
-var modalButton = document.querySelector(".header__button");
-var modalContainer = document.querySelector(".modal-feedback__container");
-var modalClose = document.querySelector(".modal-feedback__button-close");
-var modal = document.querySelector(".modal-feedback");
 
-modalButton.addEventListener("click", function(evt) {  
-  evt.preventDefault;
-  modalContainer.classList.toggle("modal-feedback__container--show");
+// index.html - валидация формы, маска
 
-  modalButton.classList.toggle("header__button--change");
-});
-
-modalClose.addEventListener("click", function(evt){
-	evt.preventDefault;
-  modalContainer.classList.remove("modal-feedback__container--show");
-
-  modalButton.classList.toggle("header__button--change");
-});
-
-modalContainer.addEventListener("click", function(evt){
-	evt.preventDefault;
-  modalContainer.classList.remove("modal-feedback__container--show");
-
-  modalButton.classList.toggle("header__button--change");
-});
-
-modal.addEventListener('click', function(evt) {
-    evt.stopPropagation();
-});
-
-$("#tel").mask("+7(999)999-9999", {autoclear: false});
+$(".phone-mask").mask("+7(999)999-9999", {autoclear: false});
 
 $.validator.addMethod("minlengthphone", function(value, element){
   return value.replace(/\D+/g, '').length > 10;
@@ -152,7 +120,7 @@ $.validator.addMethod("requirephone", function(value, element){
 },
 "Введите ваш телефон");
 
-$('#modalForm').validate({
+$(".validate-modal").validate({
   rules:{
     phone: {
       minlengthphone:true,
@@ -161,6 +129,10 @@ $('#modalForm').validate({
     },
 
     name: {
+      required:true      
+    },
+
+    agreement: {
       required:true      
     },
   },
@@ -175,15 +147,80 @@ $('#modalForm').validate({
   }
 });
 
-// $("#myForm").validate({
-//   rules: {
-//     email: {
-//       required: true,
-//       email: true
-//     },
-//     name: {
-//       required: true,
-//       minlength: 5
-//     }
-//   }
-// });
+$(".validate-contacts").validate({
+  rules:{
+    phone: {
+      minlengthphone:true,
+      requirephone:true,
+      required:true
+    },
+
+    name: {
+      required:true      
+    },
+
+    agreement: {
+      required:true      
+    }
+  },
+
+  messages: {
+    phone: {
+      required: "Введите ваш телефон"
+    },
+    name: {
+      required: "Введите ваше имя"
+    },
+    agreement: {
+      required: ""    
+    }
+  }
+});
+
+
+// index.html - модальное окно
+
+$(".header__button").click(function(){  
+  $(".modal-feedback__container").toggleClass("modal-feedback__container--show");
+  $(this).toggleClass("header__button--change");
+});
+
+$(".modal-feedback__button-close").click(function(){ 
+  $(".modal-feedback__container").removeClass("modal-feedback__container--show");
+  $(".header__button").toggleClass("header__button--change");
+});
+
+$(".modal-feedback__container").click(function(evt){
+	evt.preventDefault();
+  $(this).removeClass("modal-feedback__container--show");
+
+  $(".header__button").classList.toggle("header__button--change");
+});
+
+$(".modal-feedback").click(function(evt){
+    evt.stopPropagation();
+});
+
+
+//contacts.html - адреса
+
+$('.address__item').hide();
+$('.address__item:first').show();
+
+$('.address__button').click(function(){
+
+  $('.address__item').hide(400);
+
+  if ($(this).next().css('display') == 'none') {
+    $(this).next().show(400);
+  }
+
+  $('.address__button').removeClass("address__button--active");
+  $(this).toggleClass("address__button--active");
+});
+
+//пагинация(стили)
+
+
+
+

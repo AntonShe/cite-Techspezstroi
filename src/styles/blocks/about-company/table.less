@@ -1,0 +1,27 @@
+.table{
+  font-size: 14px;
+  line-height: 42px;
+  text-align: left;
+  border-collapse: collapse;
+  
+  &__rows{
+    height: 44px;
+
+    &--colored{
+      &:nth-of-type(odd){
+        background-color: #f5f9fc;
+      }
+    }
+  }
+
+  &__captions{
+    font-size: 12px;
+    text-transform: uppercase;
+    border-bottom: #e7e7e7 solid 1px;
+    padding-left: 37px;
+  }
+
+  &__cols{
+    padding-left: 37px;
+  }
+}

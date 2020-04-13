@@ -1,0 +1,35 @@
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  
+  background-color: @color-blue;
+  border:none;
+  border-radius: 0 5px 5px 0;
+
+  font-family: @font-family; 
+
+  cursor: pointer;
+
+  svg{
+    fill: @color-grey;
+  }
+
+  &--left{
+    transform: rotate(180deg);
+    
+  }
+
+  &--inactive{
+    background-color: @color-grey;
+    cursor: default;
+    svg{
+      fill: #bbc5cb;
+    }
+  }
+}

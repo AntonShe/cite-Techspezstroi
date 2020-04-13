@@ -1,7 +1,7 @@
 'use strict';
 
 const gulp = require('gulp');
-const sass = require('gulp-sass');
+const less = require('gulp-less');
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 const shorthand = require('gulp-shorthand');
@@ -26,14 +26,14 @@ const path = {
   src: { 
       html: 'src/pages/*.html', 
       js: 'src/js/**/*.js',
-      styles: 'src/styles/main.scss',
+      styles: 'src/styles/main.less',
       img: 'src/img/**/*.*', 
       fonts: 'src/fonts/**/*.*'
   },
   watch: { 
       html: 'src/**/*.html',
       js: 'src/js/**/*.js',
-      styles: 'src/styles/**/*.scss',
+      styles: 'src/styles/**/*.less',
       img: 'src/img/**/*.*',
       fonts: 'src/fonts/**/*.*'
   },
@@ -68,7 +68,7 @@ gulp.task('js', function () {
 
 gulp.task('style', function (){
   return gulp.src(path.src.styles)
-    .pipe(sass())
+    .pipe(less())
     .pipe(autoprefixer({
       cascade: false
     }))

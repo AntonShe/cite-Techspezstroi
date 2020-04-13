@@ -1,0 +1,29 @@
+.breadcrumb{
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 400;
+
+  &__list{
+    display: flex;
+  }
+  &__dash{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    &::after{
+      content: "";
+      width: 8px;
+      height: 1px;
+      background-color: #000;
+    }
+  }
+
+  &__visited{
+    &:hover{
+      a{
+        color: @color-blue;
+      }
+    }
+  }
+}

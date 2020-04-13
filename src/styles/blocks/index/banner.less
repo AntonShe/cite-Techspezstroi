@@ -1,0 +1,116 @@
+.banner{
+  @root:.banner;
+
+  display: flex;
+  flex-direction: column;
+  padding: 115px 0 125px 100px;
+  margin: 0 auto 90px auto;
+  width: 1140px;
+
+  &__caption{
+    width: 500px;
+    margin-bottom: 50px;
+
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &__text{
+    width: 510px;
+    margin-bottom: 70px;
+
+    font-size: 14px;
+    font-weight: 300;
+
+    &--center{
+      flex-grow: 1;
+      text-align: center;
+      transition: 1s;
+    }
+  }
+
+  &__link{
+    position: relative;
+    justify-content: space-between;
+    width: 202px;
+    border-radius: 5px;
+    height: 55px;
+    padding-left: 55px;
+
+    font-size: 12px;
+    line-height: 24px;  
+    color: #fff;
+    font-weight: bold;    
+    text-transform: uppercase;
+    transition: 1s;    
+
+    &:hover{
+      @{root}{
+        &__text--center{
+          transform: translateX(-55px);
+        }
+
+        &__button{
+          border-radius: 0 5px 5px 0;
+          position: absolute;
+          right: -1px;
+        }
+      }
+    }
+  }
+
+  &__button{
+    position: absolute;
+    height: 55px;
+    width: 55px;
+    right: 148px;
+    border-radius: 5px 0 0 5px;
+    transition: 1s;
+    z-index: 1;
+  }
+
+  &__wrapper{
+    background-color: @color-banner;
+    background-image: url("../img/banner.jpg") no-repeat right;
+    width: 100%;
+  } 
+}
+
+@media (max-width:1200px){
+  .banner{
+    width: 720px;
+    padding: 10px;
+    margin-bottom: 60px;
+
+    &__wrapper{
+      background-image: none;
+    }
+
+    &__caption{
+      margin-bottom: 30px;
+    }
+
+    &__text{
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+} 
+
+@media (max-width:768px){
+  .banner{
+    width: 540px;
+  } 
+} 
+
+@media (max-width:540px) and (min-width:320px){
+  .banner{
+    width: 320px;
+
+    &__caption{
+      font-size: 20px;
+      width: 100%;
+    }
+  }
+}

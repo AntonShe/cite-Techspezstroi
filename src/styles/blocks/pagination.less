@@ -1,0 +1,50 @@
+.pagination{
+  display: flex;
+  
+  
+  &__wrapper{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+    background-color: @color-body;
+  }
+
+  &__list{
+    display: flex;
+  }
+
+  &__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+
+    color: #8f8f8f;
+    text-transform: uppercase;
+    font-size:16px;
+    
+    &--active{
+      position: relative;
+      font-size:20px;
+      font-weight: bold;
+      color: #000;
+    }
+  }
+
+  &__button{
+    margin:0 10px;
+  }
+}
+
+@media (max-width:540px) and (min-width:320px){
+  .pagination{
+    &__item{
+      width: 30px ;
+    }
+    &__wrapper{
+      margin: 0 auto;
+    }
+  }
+}
